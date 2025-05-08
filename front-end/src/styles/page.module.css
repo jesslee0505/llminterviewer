@@ -1,0 +1,320 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--text-primary-dark);
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: rgba(244, 241, 233, 0.3);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(166, 157, 230, 0.2);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.navContent {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  font-family: var(--font-fira-code);
+  font-weight: bold;
+}
+
+.logoLink {
+    color: var(--text-primary-dark);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navLinks {
+  font-family: var(--font-fira-code);
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--text-secondary-dark);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-size: 0.875rem;
+}
+.navLink:hover {
+  color: var(--text-primary-dark);
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.loginButton {
+  font-family: var(--font-fira-code);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.loginButton:hover {
+  background-color: var(--button-hover-dark);
+}
+
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 2rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 2rem;
+  width: 100%;
+}
+
+.mainText {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+.terminalContainer {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.terminalFrame {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.terminalHeader {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #444;
+  flex-shrink: 0;
+}
+
+.terminalDots {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminalTitle {
+  color: #ccc;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  flex-grow: 1;
+  padding-left: 40px;
+}
+
+.terminalBody {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #000000;
+  color: #D4D4D4;
+  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.terminalBody > div > pre {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+}
+
+.motto {
+  font-family: var(--font-fira-code);
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-primary-dark);
+  margin-bottom: 1.5rem;
+  text-shadow: none;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.subheadline {
+  font-family: var(--font-inter);
+  font-size: 1.125rem;
+  color: var(--text-secondary-dark);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ctaContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  font-family: var(--font-fira-code);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.ctaButton:hover {
+  background-color: var(--button-hover-dark);
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .mainText {
+    flex-basis: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+
+  .terminalContainer {
+      flex-basis: auto;
+      width: 100%;
+      max-width: 500px;
+      padding-left: 0;
+  }
+
+  .terminalFrame {
+      height: 350px;
+  }
+
+  .motto {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .subheadline {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctaContainer {
+      justify-content: center;
+  }
+
+  .navLinks {
+      display: none;
+  }
+}
+
+.mesh-gradient-background {
+  background-color: #FAF7F2;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.mesh-gradient-background::before,
+.mesh-gradient-background::after,
+.mesh-gradient-background > div.gradient-shape {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  filter: blur(80px);
+  z-index: 1;
+}
+
+.mesh-gradient-background::before {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #B8A6D5 0%, transparent 70%);
+  top: -150px;
+  left: -100px;
+}
+
+.mesh-gradient-background::after {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #A0C3D8 0%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  opacity: 0.6;
+}
+
+.mesh-gradient-background > div.gradient-shape.orange {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, #F5CEC7 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -30%);
+  opacity: 0.4;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,140 @@
+.loginPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.formWrapper {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.formWrapper h2 {
+  font-size: 1.5rem;
+  color: #0d0c22;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.loginForm {
+  width: 100%;
+  text-align: left;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #3d3d4e;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #e7e7e9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  color: #0d0c22;
+  background-color: #fff;
+}
+
+.formGroup input:focus {
+  border-color: #ea4c89;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(234, 76, 137, 0.1);
+}
+
+.formGroup input::placeholder {
+  color: #9e9ea7;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background-color: #0d0c22;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #333;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.success {
+   background-color: #d1e7dd;
+   color: #0f5132;
+   border-color: #badbcc;
+}
+
+.toggleMode {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #3d3d4e;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #ea4c89;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 0 0 4px;
+  font-size: 0.875rem;
+}
+
+.toggleButton:hover {
+  text-decoration: underline;
+}
+
+.toggleButton:disabled {
+  color: #9e9ea7;
+  cursor: not-allowed;
+  text-decoration: none;
+}

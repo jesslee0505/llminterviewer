@@ -1,0 +1,68 @@
+.qa_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 1rem;
+}
+
+.qa_container h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-primary-dark);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.qa_container h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary-dark);
+}
+
+.user_query_display {
+  margin-top: 0.5rem;
+  background-color: var(--background-highlight, #f3f4f6);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--text-primary-dark);
+}
+
+.status_container {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-dark);
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--text-primary-dark);
+}
+
+.status_container .errorTextGlobal {
+    color: var(--color-error-text, #f48771);
+}
+
+.interviewer_reply {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--background-success-light, #ecfdf5);
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.interviewer_reply h5 {
+  color: var(--color-success-dark, #047857);
+}
+
+.interviewer_reply p {
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+  color: var(--color-success-text, #064e3b);
+}

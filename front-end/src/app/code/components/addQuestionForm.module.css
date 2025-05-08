@@ -1,0 +1,168 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 15px;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: #333;
+}
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #888;
+  line-height: 1;
+}
+.closeButton:hover {
+  color: #444;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-weight: 500;
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+  font-size: 0.9rem;
+}
+
+.requiredStar {
+  color: #e74c3c;
+  margin-left: 4px; 
+  font-size: 1em; 
+  line-height: 1; 
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  background-color: #fdfdfd;
+  color: #333;
+}
+.input:focus, .textarea:focus, .select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+.constraintInputContainer {
+  display: flex;
+  gap: 8px;
+}
+.constraintInputContainer .input {
+  flex-grow: 1;
+}
+
+.addButtonSmall {
+  padding: 8px 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.addButtonSmall:hover {
+  background-color: #4a9d4a;
+}
+
+.constraintList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 6px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.constraintItem {
+  background-color: #f0f0f0;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.removeButtonSmall {
+  background: none;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0 4px;
+}
+.removeButtonSmall:hover {
+  color: #a93226;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+.submitButton:hover {
+  background-color: #005ec4;
+}
+.submitButton:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.errorMessage, .successMessage {
+  padding: 9px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

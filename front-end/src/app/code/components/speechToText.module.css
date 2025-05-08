@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.record_button_container {
+  position: fixed;
+  bottom: 35px;
+  left: 35px;
+  z-index: 1000;
+}
+
+.record_button {
+  background-color: var(--button-neutral-background, #111827);
+  color: var(--button-neutral-text, #FFFFFF);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.record_button:hover {
+  background-color: var(--button-neutral-hover, #374151);
+}
+
+.record_button:active {
+  transform: scale(0.95);
+}
+
+.record_button.recording {
+  background-color: var(--color-error-strong, #D32F2F);
+}
+
+.record_button.processing {
+  background-color: var(--color-warning-strong, #F59E0B);
+  cursor: not-allowed;
+}
+
+.record_button svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.convo_status {
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: left;
+  color: var(--text-primary-dark);
+}
+
+.convo_status .errorTextGlobal {
+    color: var(--color-error-text, #f48771);
+}

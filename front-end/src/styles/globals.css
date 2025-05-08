@@ -1,0 +1,123 @@
+:root {
+  --background-base: #f4f1e9;
+  --nav-background-dark: rgba(244, 241, 233, 0.3);
+  --text-primary-dark: #000000;
+  --text-secondary-dark: #333333;
+  --text-link-dark: #000000;
+  --button-background-dark: #f2cba0;
+  --button-text-dark: #3A2A5B;
+  --button-hover-dark: #ebc9a4;
+  --border-dark: #D1C9E8;
+
+  --blob-color-purple: #a69de6;
+  --blob-color-peach1: #f2cba0;
+  --blob-color-peach2: #ebc9a4;
+  --blob-color-blue: #A0C3D8;
+  --blob-color-pinkish: #EAA9C4;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-fira-code: 'Fira Code', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--background-base);
+  color: var(--text-primary-dark);
+  font-family: var(--font-inter);
+  position: relative;
+  z-index: 0;
+}
+
+.gradient-blob {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: overlay;
+  filter: blur(150px);
+  z-index: -1;
+  opacity: 0.65;
+}
+
+.gradient-blob-1-specific {
+  width: 60vw;
+  height: 60vw;
+  max-width: 700px;
+  max-height: 700px;
+  background: radial-gradient(circle, var(--blob-color-peach1) 0%, transparent 55%);
+  bottom: -20vh;
+  left: -5vw;
+  opacity: 0.75;
+}
+
+.gradient-blob-2-specific {
+  width: 50vw;
+  height: 50vw;
+  max-width: 580px;
+  max-height: 580px;
+  background: radial-gradient(circle, var(--blob-color-peach2) 0%, transparent 65%);
+  top: 5vh;
+  left: 40%;
+  transform: translateX(-50%);
+  opacity: 0.55;
+}
+
+.gradient-blob-3-specific {
+  width: 45vw;
+  height: 45vw;
+  max-width: 520px;
+  max-height: 520px;
+  background: radial-gradient(circle, var(--blob-color-pinkish) 0%, transparent 60%);
+  top: 50vh;
+  left: 20vw;
+  opacity: 0.6;
+}
+
+.gradient-blob-4-specific {
+  width: 40vw;
+  height: 40vw;
+  max-width: 450px;
+  max-height: 450px;
+  background: radial-gradient(circle, var(--blob-color-purple) 0%, transparent 70%);
+  top: 40vh;
+  right: 5vw;
+  opacity: 0.5;
+}
+
+.gradient-blob-5-purple-topleft {
+  width: 55vw;
+  height: 55vw;
+  max-width: 650px;
+  max-height: 650px;
+  background: radial-gradient(circle, var(--blob-color-purple) 0%, transparent 60%);
+  top: -15vh;
+  left: -10vw;
+  opacity: 0.7;
+}
+
+.gradient-blob-6-blue-centerright {
+  width: 65vw;
+  height: 65vw;
+  max-width: 750px;
+  max-height: 750px;
+  background: radial-gradient(circle, var(--blob-color-blue) 0%, transparent 60%);
+  top: 30vh;
+  right: -20vw;
+  opacity: 0.6;
+}
+
+a {
+  color: var(--text-link-dark);
+  text-decoration: none;
+}
+
+a:hover {
+}

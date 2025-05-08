@@ -1,0 +1,14 @@
+name: technical_interviewer
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.8
+  - nodejs
+  - fastapi
+  - pydantic
+  - transformers
+  - pytorch
+  - accelerate>=0.26.0
+  - uvicorn
